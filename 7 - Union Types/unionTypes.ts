@@ -22,3 +22,14 @@ coordenadas = {lat: 1.232, long: -12.992}
 function printAge(age: number | string): void{
     console.log(`You are ${age} years old`)
 }
+
+// Arrays que permitem diferentes tipos -
+
+const meuArray: (number | string)[] = []
+meuArray.push(2)
+meuArray.push('Opa')
+// meuArray.push(true) // O argumento do tipo 'boolean' não é atribuível ao parâmetro do tipo 'string | number'.ts(2345)
+
+const meuArray2: number[] | string[] = [1,2,3] // um array só de numeros ou só de strings
+
+const localizacao: (Loc | Point)[] = [coordenadas, {x: 1, y:12}]
