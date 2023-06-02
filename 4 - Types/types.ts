@@ -1,23 +1,23 @@
-type Point = { // a partir de agora, Point é um tipo legitimo
+type Ponto = { // a partir de agora, Point é um tipo legitimo
     x: number,
     y: number,
     z?: number // valor opcional
 }
 
-let coordenada: Point = {x: 34, y: 2}
-console.log(coordenada)
+let coord: Ponto = {x: 34, y: 2}
+console.log(coord)
 
-function doublePointTwo(point: Point): Point {
+function doublePointTwo(point: Ponto): Ponto {
     return {x: point.x * 2, y: point.y * 2}
 }
 
-type User = {
+type Usuario = {
     readonly id: number; // dar a propriedade readonly num atributo de um type faz com que,
     // ele seja imutavel
     username: string;
 }
 
-var usuario: User = {
+var usuario: Usuario = {
     id: 1,
     username: 'caioagralemos'
 }
@@ -34,7 +34,7 @@ type Color = {
 
 type colorCircle = Circle & Color; // Tipos de Interseção
 
-const happyFace: colorCircle = {
+const happyFacey: colorCircle = {
     radius: 4,
     color: 'yellow'
 }
