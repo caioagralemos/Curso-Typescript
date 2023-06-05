@@ -19,3 +19,8 @@ let qualquer: any = 'Ola'
 qualquer = 1
 qualquer = true
 qualquer()
+
+
+// type assertions
+var mystery: unknown = 4
+const numChars = (mystery as string).length // vai tratar como string, mesmo não sendo
