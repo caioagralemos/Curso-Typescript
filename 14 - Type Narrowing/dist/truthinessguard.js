@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 // Truthiness Guards - checar se um valor existe antes de trabalhar com ele "if(word)"
 const printLetters = (word) => {
     if (word) {
@@ -11,4 +9,4 @@ const printLetters = (word) => {
         console.log('Você não passou nada como parâmetro!');
     }
 };
-exports.default = printLetters;
+export default printLetters;

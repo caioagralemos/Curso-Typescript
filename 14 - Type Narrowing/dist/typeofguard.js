@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 // Typeof Guard (typeof x == "type")
 function triple(a) {
     if (typeof a === "string") {
@@ -10,4 +8,4 @@ function triple(a) {
         return a * 3;
     }
 }
-exports.default = triple;
+export default triple;

@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 // instanceof Narrowing (value instanceof class)
 function printFullDate(date) {
     if (date instanceof Date) {
@@ -10,4 +8,4 @@ function printFullDate(date) {
         console.log(x);
     }
 }
-exports.default = printFullDate;
+export default printFullDate;
